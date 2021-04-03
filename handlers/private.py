@@ -4,8 +4,7 @@ from helpers.filters import command, other_filters2
 
 @Client.on_message(command("help") & other_filters2)
 async def help(_, message: Message):
-    await message.reply_text(
-        f"""🇺🇸 #English 
+    await message.reply_text("""🇺🇸 #English 
 I Can Play Music In Your Voice Chat!
 But How? 🤔 Follow These Steps👇
 
@@ -25,7 +24,7 @@ But How? 🤔 Follow These Steps👇
 WARNING: Please Do Not Spam Me!
 
 Enjoy!
-----------------------------------------------
+
 🇸🇦 #Arabic 
 يمكنني تشغيل الموسيقى في محادثتك الصوتية!
 ولكن كيف؟ 🤔 اتبع هذه الخطوات 👇
@@ -46,9 +45,7 @@ Enjoy!
 كرد لرابط أو ملف.
 
 5. بوم! تم تشغيل البث في محادثتك الصوتية في غضون 3 ثوان.
-
-استمتع!"""
-)
+استمتع!""")
 @Client.on_message(other_filters2)
 async def start(_, message: Message):
     pic = "https://i.imgur.com/cCKoCHj.jpg"
