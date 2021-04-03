@@ -6,25 +6,29 @@ from helpers.filters import other_filters2
 
 @Client.on_message(other_filters2)
 async def start(_, message: Message):
-    await message.reply_text(
-        f"""I am an open-source @CallsMusic bot, I let you play music in your group's voice chat.
+    pic = "https://i.imgur.com/cCKoCHj.jpg"
+    await message.reply_photo(pic,
+        caption = f"""Hello 👋 {},
+Nice To Meet You !, I'm MarsPyro, I Can Let You Play Music In Your Group's Voice Chat.
 
-The commands I currently support are:
+The Commands I Currently Support Are:
 
-/play - play the replied audio file or YouTube video
-/pause - pause the audio stream
-/resume - resume the audio stream
-/skip - skip the current audio stream
-/stop - clear the queue and remove the userbot from the call
-        """,
+/play - Play The Replied Audio File Or YouTube Video
+/pause - Pause The Audio Stream
+/resume - Resume The Audio Stream
+/skip - Skip The Current Audio Stream
+/stop - Clear The Queue And Remove The X-Bot From The Call
+
+**Thanks To :** PyTgCalls & C.M
+        """.format(message.from_user.mention),
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "Group", url="https://t.me/callsmusicchat"
+                        "👨‍💻 Owner", url="https://t.me/AmineSoukara"
                     ),
                     InlineKeyboardButton(
-                        "Channel", url="https://t.me/callsmusic"
+                        "🆘️ Help", url="https://telegra.ph/MarsPyro-04-03"
                     )
                 ]
             ]
