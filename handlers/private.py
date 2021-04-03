@@ -61,6 +61,7 @@ async def start(_, message: Message):
 /skip - Skip The Current Audio Stream
 /stop - Clear The Queue And Remove The X-Bot From The Call
 /help - Some Help "How To Set-Up"
+
 ⭐ **Thanks To:** PyTgCalls & C.M
         """,
         reply_markup=InlineKeyboardMarkup(
