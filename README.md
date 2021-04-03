@@ -1,9 +1,9 @@
-# Calls Music — The first open-source PyTgCalls based project
+# Calls Music 2 — The first open-source PyTgCalls based project
 
 ## Requirements
 
 - FFmpeg
-- NodeJS 15+
+- Node.JS 15+
 - Python 3.7+
 
 ## Deployment
@@ -12,7 +12,7 @@
 
 Copy `example.env` to `.env` and fill it with your credentials.
 
-### Without Docker
+### The good way
 
 1. Install Python requirements:
    ```bash
@@ -36,15 +36,20 @@ Copy `example.env` to `.env` and fill it with your credentials.
 
 ### Heroku
 
-[Click here](https://github.com/callsmusic/callsmusicheroku)
+[Click here](https://heroku.com/deploy?template=https://github.com/callsmusic/callsmusic-2_heroku/)
 
+## Commands
 
-## Credits
-
-- [Roj](https://github.com/rojserbest) & [Marvin](https://github.com/BlackStoneReborn): development
-- [Laky](https://github.com/Laky-64) & [Andrew](https://github.com/AndrewLaneX): PyTgCalls
+| Command | Description                                  |
+| ------- | -------------------------------------------- |
+| /play   | play the replied audio file or YouTube video |
+| /pause  | pause the audio stream                       |
+| /resume | resume the audio stream                      |
+| /skip   | skip the current audio stream                |
+| /stop   | clear the queue and stop the audio stream    |
 
 ## License
 
 ### GNU Affero General Public License v3.0
+
 [Read more](http://www.gnu.org/licenses/#AGPL)
