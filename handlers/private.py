@@ -9,10 +9,9 @@ async def start(_, message: Message):
     pic = "https://i.imgur.com/cCKoCHj.jpg"
     mention = f"{message.from_user.mention}"
     await message.reply_photo(pic,
-        caption = f"""Hello 👋 {mention},
-Nice To Meet You !, I'm MarsPyro, I Can Let You Play Music In Your Group's Voice Chat.
+        caption = f"""👋 **Hello {mention}, I'm MarsPyro, I Can Let You Play Music In Your Group's Voice Chat.**
 
-The Commands I Currently Support Are:
+⚙ **The Commands I Currently Support Are:**
 
 /play - Play The Replied Audio File Or YouTube Video
 /pause - Pause The Audio Stream
@@ -20,7 +19,7 @@ The Commands I Currently Support Are:
 /skip - Skip The Current Audio Stream
 /stop - Clear The Queue And Remove The X-Bot From The Call
 
-**Thanks To :** PyTgCalls & C.M
+⭐ **Thanks To:** PyTgCalls & C.M
         """,
         reply_markup=InlineKeyboardMarkup(
             [
